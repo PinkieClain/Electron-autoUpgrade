@@ -1,8 +1,9 @@
 ﻿# 通过electron封装客户端，并实现自我更新机制
-electron封装客户端升级说明:
-点击此网址http://version1.oss-cn-beijing.aliyuncs.com/app%20Setup%200.1.0.exe 可下载版本一的windows安装包，您可以亲自验证程序功能。源代码网址：https://github.com/PinkieClain/Test1
+## electron封装客户端升级说明:
+点击此网址http://version1.oss-cn-beijing.aliyuncs.com/app%20Setup%200.1.0.exe 可下载版本一的windows安装包，您可以亲自验证程序功能。源代码网址：https://github.com/PinkieClain/Test1  
+
 本功能的实现有两个重点问题，第一是将文件封装为方便分发的客户端，第二是实现客户端的自我更新机制。对于第一项，我使用了electron-builder模块来进行封装。第二项通过autoupdater实现.
-##此客户端功能实现结果展示如下：
+### 此客户端功能实现结果展示如下：
 1.将版本一（v0.1.0）文件封装为nsis可安装.exe文件。点击exe文件安装版本一.
 ![image](images/1.jpg)
 2.安装完成后桌面会出现客户端的启动快捷图标，并且客户端会自动启动.
